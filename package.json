@@ -8,17 +8,21 @@
     "url": "git://github.com/henkensm/sportClubManagemnt"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- -u exports -R spec"
   },
   "author": "henkensm",
   "license": "ISC",
   "dependencies": {
-    "chai": "^3.5.0",
     "express": "^4.13.4",
     "mocha": "^2.4.5",
     "orm": "^2.1.30",
+    "request": "^2.69.0"
+  },
+  "devDependencies": {
+    "supertest": "^1.2.0",
     "really-need": "^1.9.0",
-    "request": "^2.69.0",
-    "supertest": "^1.2.0"
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.2"
   }
 }
