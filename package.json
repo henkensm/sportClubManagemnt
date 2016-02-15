@@ -8,8 +8,8 @@
     "url": "git://github.com/henkensm/sportClubManagemnt"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec",
-    "cover": "istanbul cover node_modules/mocha/bin/_mocha -- -u exports -R spec",
+    "test": "mocha",
+    "cover": "istanbul cover _mocha",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "author": "henkensm",
