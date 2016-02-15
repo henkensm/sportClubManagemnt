@@ -1,18 +1,24 @@
 {
   "name": "SportClubManagement",
   "version": "1.0.0",
-  "description": "",
+  "description": "Manage Sport Club",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/henkensm/sportClubManagemnt"
+  },
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec"
   },
-  "author": "",
+  "author": "henkensm",
   "license": "ISC",
   "dependencies": {
     "chai": "^3.5.0",
     "express": "^4.13.4",
     "mocha": "^2.4.5",
     "orm": "^2.1.30",
-    "request": "^2.69.0"
+    "really-need": "^1.9.0",
+    "request": "^2.69.0",
+    "supertest": "^1.2.0"
   }
 }
