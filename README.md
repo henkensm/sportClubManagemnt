@@ -1,1 +1,1 @@
-"# sportClubManagemnt" 
+# sportClubManagement
