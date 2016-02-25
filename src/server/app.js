@@ -54,8 +54,6 @@ app.get('/partials/:name', routes.partials);
 app.get('/api/name', api.name);
 
 // redirect all other to the index (HTML5 history)
-//app.get('*', routes.index);
-
 
 /**
  * Start Server
