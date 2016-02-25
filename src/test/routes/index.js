@@ -1,6 +1,6 @@
 var index = require('../../server/routes/index');
 var sinon = require('sinon');
-describe('loading express', function(){
+describe('Routes index', function(){
 
     var req, res;
     beforeEach(function(){
