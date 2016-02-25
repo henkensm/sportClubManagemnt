@@ -8,9 +8,9 @@
   },
   "scripts": {
     "start": "node ./src/server/app.js",
-    "test": "mocha src/test/**/*",
-    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha -- -u exports -R spec src/test/**/*",
-    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec src/test/**/* && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "test": "mocha src/test/*",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha -- -u exports -R spec src/test/*",
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec src/test/* && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
