@@ -1,24 +1,20 @@
-/**
- * Created by henkensm on 15/02/2016.
- */
-
 var request = require('supertest');
 require = require('really-need');
 describe('loading express', function(){
-    var server;
-
+   var server;
     beforeEach(function(){
-        server = require('../app/server', {bustCache:true});
+        server = require('../server/app.js', {bustCache: true});
     });
+
     afterEach(function(done){
         server.close(done);
     });
 
-    it('responds to /', function testRoot(done){
+    it('responds to /', function testSlash(done){
         request(server).get('/').expect(200, done);
     });
 
     it('404 everything else', function testPath(done){
-        request(server).get('/foo/bar').expect(404, done);
+       request(server).get('/foo/test/').expect(404, done);
     });
 });

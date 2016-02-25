@@ -1,31 +1,41 @@
 {
-  "name": "SportClubManagement",
+  "name": "testBasket",
   "version": "1.0.0",
-  "description": "Manage Sport Club",
+  "description": "Test ",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/henkensm/sportClubManagemnt"
+  "engines": {
+    "node": ">= 0.8"
   },
   "scripts": {
-    "test": "mocha",
-    "cover": "istanbul cover _mocha",
+    "start": "node ./src/server/app.js",
+    "test": "mocha ./src/test",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha -- -u exports -R spec src/test/**/*",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henkensm/sportClubManagemnt.git"
   },
   "author": "henkensm",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.13.4",
-    "mocha": "^2.4.5",
-    "orm": "^2.1.30",
-    "request": "^2.69.0"
+  "bugs": {
+    "url": "https://github.com/henkensm/sportClubManagemnt/issues"
   },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "errorhandler": "^1.4.3",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "method-override": "^2.3.5",
+    "morgan": "^1.7.0"
+  },
+  "homepage": "https://github.com/henkensm/sportClubManagemnt",
   "devDependencies": {
     "chai": "^3.5.0",
-    "coveralls": "^2.11.6",
     "istanbul": "^0.4.2",
-    "mocha-lcov-reporter": "^1.0.0",
+    "mocha": "^2.4.5",
     "really-need": "^1.9.0",
+    "sinon": "^1.17.3",
     "supertest": "^1.2.0"
   }
 }

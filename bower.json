@@ -1,0 +1,16 @@
+{
+  "name": "testBasket",
+  "description": "Test",
+  "main": "index.js",
+  "authors": [
+    "henkensm"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/henkensm/sportClubManagemnt",
+  "moduleType": [
+    "node"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0"
+  }
+}
