@@ -2,3 +2,7 @@ node_modules/
 .idea/
 src/server/public/javascripts/lib/
 coverage/
+.jshintrc
+.project
+.settings/
+.tern-project
